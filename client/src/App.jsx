@@ -21,7 +21,7 @@ export default function App() {
       setLoading(true);
       setSuccess(false);
       setError(false);
-      const res = await axios.post("http://localhost:5000/stk", formData);
+      const res = await axios.post("https://simple-mpesa-stk.onrender.com/stk", formData);
       setLoading(false);
       setSuccess(
         `${res.data.CustomerMessage} please enter your M-PESA PIN in your phone` ||
